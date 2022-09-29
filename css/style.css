@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&family=Work+Sans:wght@700&display=swap');
+
+:root {
+    --body-bg-color: #121214;
+    --text-color: #E1E1E6;
+    --title-color: #04D361;
+    --form-color: #A8A8A8;
+    --bg-button-color: #8257e5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-size: 100%;
+}
+
+main {
+    height: 100vh;
+    background-image: url(../assets/images/image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 30px;
+    padding-top: 50px;
+    /* background: var(--body-bg-color); */
+}
+
+.logoRocketNews img {
+    width: 100%;
+    max-width: 389px;
+}
+
+.logoRocketNews {
+    margin-bottom: 92px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.text h1 {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: var(--title-color);
+    padding-bottom: 9px;
+}
+
+.text h2 {
+    font-family: 'League Spartan';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--text-color);
+    padding-bottom: 9px;
+}
+
+.text p {
+    font-family: 'League Spartan';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--text-color);
+}
+
+.labelEmail {
+    font-family: 'League Spartan';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 138.73%;
+    color: var(--form-color);
+    margin-bottom: 17px;
+}
+
+.boxEmail {
+    width: 100%;
+    max-width: 798px;
+    height: 100%;
+    max-height: 48px;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.inputEmail {
+    height: 48px;
+    width: 100%;
+    padding-left: 10px;
+    border: none;
+    background: none;
+    outline: none;
+    color: var(--body-bg-color);
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    border-left: 5px solid var(--title-color);
+}
+
+::placeholder {
+    color: var(--form-color);
+    font-size: 12px;
+}
+
+.btnSend img {
+    height: 100%;
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnSend {
+    background: var(--bg-button-color);
+    padding: 12px 12px;
+    cursor: pointer;
+}
+
+.btnSend:hover {
+    filter: brightness(0.7);
+}
+
+.linkText a {
+    font-family: 'League Spartan';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 138.73%;
+    color: var(--bg-button-color);
+}
+
+.linkText {
+    display: flex;
+    justify-content: left;
+    gap: 5px;
+}
+
+.linkText img {
+    height: 24px;
+}
+
+.linkText img:hover {
+    transform: scale(1.09);
+    cursor: pointer;
+}
+
+@media (max-width:768px) {
+    main {
+        background: var(--body-bg-color);
+        height: 100%;
+        width: 100%;
+        background-image: none;
+        padding: 20px;
+    }
+
+    .text h1 {
+        font-size: 18px;
+    }
+
+    .text h2 {
+        font-size: 12px;
+    }
+
+    .text p {
+        font-size: 12px;
+    }
+
+    .logoRocketNews {
+        margin-bottom: 30px;
+    }
+
+    .boxEmail {
+        margin-top: 20px;
+    }
+}
