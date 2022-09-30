@@ -141,6 +141,7 @@ main {
     background: var(--bg-button-color);
     padding: 12px 12px;
     cursor: pointer;
+    border: none;
 }
 
 .btnSend:hover {
